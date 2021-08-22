@@ -1,0 +1,215 @@
+html{
+    min-height:100%;
+    background:url(../images/rackGear.jpg) rgba(207, 124, 29, 0.925);
+    background-size:cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    color:whitesmoke;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-left: 6%;
+}
+
+h3{
+    color:whitesmoke;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-left: 6%;
+    clear: both;
+}
+
+li{
+    list-style-type: none;
+}
+
+img.bioImage {
+    border: black solid 5px;
+    clear: both;
+    float: left;
+    margin: 1% 1% 5% 8%;
+    width: 12%;
+}
+
+
+p {
+    color:whitesmoke;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+a{
+    color:whitesmoke;
+}
+
+.textContent p {
+    float: left;
+    width: 50%;
+    margin: 1% 5% 0 5%;
+}
+
+.textContent h2{
+    float: left;
+    width: 50%;
+    margin: 0 5% 0 5%;
+}
+
+.aboutText p{
+    float: left;
+    width: 40%;
+    margin: 1% 5% 0 6%;
+}
+
+
+.servicesList ul {
+    width: 24%;
+    float: left;
+    border: whitesmoke solid 3px;
+}
+
+.services h3 {
+    margin: 1% 0 0 -5%;
+}
+
+.services li{
+    color:whitesmoke;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    list-style-type: disc;
+    margin: 0px 0 5% 5%;
+}
+
+.gearList {
+    width: 22%;
+    float: left;
+    border: whitesmoke solid 3px;
+    margin: 1% 1% 1% 6%;
+}
+
+.gearList h3{
+    margin: 0;
+    text-decoration: underline;
+}
+
+.gearList li {
+    color:whitesmoke;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    list-style-type: disc;
+    margin: 0px 0 1% 5%;
+}
+
+.homeVideos {
+    margin: 0 0 26% 0;
+}
+
+.embed-container { 
+    position: relative;
+    float: left;
+    padding-bottom: 10%; 
+    overflow: hidden; 
+    width: 29%;
+    max-width: 100%; 
+    margin: 0 0 4% 0;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 21%; 
+    width: 55%; 
+    height: 100%; 
+    border: black solid 2px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+@media all and (min-width:600px) and (max-width:999px) {
+    .homeVideos{
+        margin: 0px 0 45% 0;
+    }
+
+    img.bioImage{
+        width: 28%;
+    }
+
+    .gearList{
+        width: 34%
+    }
+
+    footer{
+        width: 70%;
+        margin: 0 0 0 15%;
+    }
+}
+
+@media all and (max-width:599px) {
+    h2{ 
+        font-size: 1.4em;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+
+    .homeVideos {
+        margin-top: 0%;
+    }
+
+    .embed-container {
+        position: relative;
+        float: none;
+        padding-bottom: 56.25%;
+        width: 90%;
+        height: 10%;
+        margin: 1% 0 10% 4%;
+        overflow: hidden;
+        max-width: 100%; 
+    } 
+
+    .embed-container iframe, .embed-container object, .embed-container embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+    }
+
+    img.bioImage{
+        width: 70%;
+        margin: 1% 1% 2% 5%;
+    }
+
+    .textContent p {
+        width: 80%;
+        margin: -2% 5% 15% 5%;
+    }
+
+    .servicesList ul {
+        width: 70%;
+        margin: 0 0 0 5%;
+        float: none;
+        clear: both;
+    }
+
+    .aboutText p {
+        width: 84%;
+        margin: 1% 5% 6% 6%;
+    }
+
+    .gearList{
+        width: 78%;
+    }
+}
